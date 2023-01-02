@@ -1,5 +1,5 @@
-#ifndef TEMPERATURE_H_
-#define TEMPERATURE_H_
+#ifndef DEVICEREPO_H_
+#define DEVICEREPO_H_
 
 #include "Device.h"
 #include "Formatter.h"
