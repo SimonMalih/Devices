@@ -7,7 +7,7 @@
 
 class Lightbulb : public Device {
    public:
-    Lightbulb(std::string position) : Device(position, LIGHTBULB) {}
+    Lightbulb(std::string position) : Device(position, Device::LIGHTBULB) {}
 };
 
 #endif
