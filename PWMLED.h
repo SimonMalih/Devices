@@ -18,12 +18,12 @@ class PWMLED : public Device {
     }
 
    public:
-    PWMLED(string position, int pin, int brightness) : Device(position, Device::LIGHTBULB) {
+    PWMLED(std::string position, int pin, int brightness) : Device(position, Device::LIGHTBULB) {
         ledcSetup(ledChannel, freq, resolution);
         initPWMLED(pin, brightness);
     }
 
-    PWMLED(string position, int pin) : Device(position, Device::LIGHTBULB) {
+    PWMLED(std::string position, int pin) : Device(position, Device::LIGHTBULB) {
         ledcSetup(ledChannel, freq, resolution);
         initPWMLED(pin, 0);
     }
